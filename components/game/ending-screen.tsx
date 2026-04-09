@@ -9,6 +9,7 @@ interface EndingScreenProps {
   sentText?: TextChoice
   sentPhoto?: PhotoChoice
   onRestart: () => void
+  onMenu: () => void
 }
 
 interface EndingData {
@@ -81,6 +82,7 @@ export function EndingScreen({
   sentText,
   sentPhoto,
   onRestart,
+  onMenu,
 }: EndingScreenProps) {
   const [phase, setPhase] = useState<
     "likaResponse" | "screenOff" | "title" | "subtitle" | "restart"
