@@ -123,7 +123,7 @@ export function GalleryScreen({
       next.add(id)
       return next
     })
-    if (viewedPhotos.size >= 1) {
+    if (id === "screenshot") {
       onPhotoViewed()
     }
   }
